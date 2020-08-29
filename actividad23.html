@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="styles/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
+   <script src="js/scripts.js"></script>
+   <title>Actividad 23 - Hagamos una Fiesta de Baile</title>
+</head>
+<body>
+   <div id="cabecera">
+      <h1>Hagamos una Fiesta de Baile</h1>
+   </div>
+   <!-- INICIO_LOADER -->
+   <div id="pageloader">
+      <img src="img/LogoOjo_FTA.png" class="spining" width="100px">
+   </div>
+   <!-- FIN_LOADER -->
+   <div id="contenido">
+      <h2>Objetivos de la Actividad</h2>
+      <p class="texto">
+         En esta actividad final, los estudiantes aprenden a usar mensajes y eventos de inicio, y luego crean su propio 
+         programa usando una variedad de tipos de bloques.
+      </p>
+      <h2>Cómo Funciona</h2>
+      <p class="texto">
+         Esta actividad presenta dos de los tipos de bloques más complicados en EdBlocks: mensajes y eventos de inicio. 
+         <br><br>
+         Debido a que este tipo de bloques pueden ser un desafío, esta actividad lo utiliza como maestro para participar, 
+         lo que ayuda a simplificar la exposición inicial del estudiante.
+         <br><br>
+         Deberá programar un Edison para que sea el líder, enviando el mensaje rosa. 
+         <br><br>
+         Los estudiantes necesitarán que sus programas reaccionen al recibir ese mensaje, haciendo que sus robots 
+         Edison "bailen".
+      </p>
+      <h2>Información Adicional: Cómo Funcionan los Mensajes y el Evento de Inicio</h2>
+      <h1>&emsp; Mensajes</h1>
+      <p class="texto">
+         Los robots Edison pueden enviarse y recibir mensajes infrarrojos entre sí. 
+         <br><br>
+         En EdBlocks, los sobres de colores son los bloques que se utilizan para esta función de mensajería. 
+         <br><br>
+         Para usar los mensajes, necesita al menos dos robots Edison y deberá escribir un programa separado para cada robot. 
+         <br><br>
+         Un robot deberá enviar uno de los mensajes de colores como parte de su programa. 
+         <br><br>
+         El segundo robot necesitará tener un programa que contenga un bloque de mensaje de 'esperar hasta' o 
+         'iniciar evento' del mismo color. 
+         <br><br>
+         Cuando el programa del primer robot progresa al bloque 'enviar mensaje', enviará un mensaje de infrarrojos. 
+         <br><br>
+         Esto activará el segundo robot para comenzar o continúe su programa desde el bloque de mensajes en el 
+         programa del segundo robot.
+      </p>
+      <h1>&emsp; Iniciar eventos</h1>
+      <p class="texto">
+         Los bloques 'iniciar eventos' permiten al usuario hacer que un subprograma comience a partir de un evento 
+         específico mientras se ejecuta el programa principal. 
+         <br><br>
+         Estos bloques emulan el concepto de programación informática de "interrupciones". 
+         <br><br>
+         Los eventos de inicio permiten a los usuarios colocar programas en capas verticalmente, con programas 
+         secundarios que interrumpen el programa principal cuando se activa el evento de inicio.
+         <br><br>
+         Para usar un evento de inicio, simplemente agréguelo al espacio de trabajo en la aplicación EdBlocks y 
+         arrastre y suelte bloques de programa después de él, como lo haría con el bloque de inicio normal. 
+         <br><br>
+         Cuando descargue su programa en Edison, se descargarán tanto el programa principal como el subprograma que 
+         comienza con el nuevo evento de inicio. 
+         <br><br>
+         Cuando se presiona el botón de reproducción (triángulo) en Edison, Edison ejecutará el programa principal. 
+         <br><br>
+         Si ocurre la condición del evento de inicio, Edison ejecutará el subprograma de evento de inicio hasta su 
+         finalización, luego regresará al programa principal y continuará con el programa principal. 
+         <br><br>
+         Esto sucederá siempre que se cumplan las condiciones del evento de inicio. 
+         <br><br>
+         Si no hay bloques adjuntos al programa principal, Edison esperará hasta que se cumpla la condición del evento 
+         de inicio y luego ejecutará el subprograma de evento de inicio.
+      </p>
+      <h2>Consejos y Trucos</h2>
+      <p class="texto">
+         •	Esta actividad requiere que un robot Edison sea el 'líder' y envíe el mensaje rosa:
+      </p>
+      <p class="img_centrada"><img src="img/actividad23/23-1.png" width="25%" alt=""></p>
+      <p class="texto">
+         •	Asegúrese de que los programas de "rutina de baile" de los estudiantes comiencen solo una vez que se 
+            reciba el mensaje rosa. 
+         <br><br>
+         &emsp;Para hacer esto, los estudiantes deben comenzar su baile después de un bloque de mensaje rosa 
+            'esperar hasta' o después del evento de inicio del mensaje rosa:
+      </p>
+      <p class="img_centrada"><img src="img/actividad23/23-2.png" width="60%" alt=""></p>
+      <p class="texto">
+         •	La mensajería de Edison utiliza infrarrojos, que tiene un alcance limitado, similar al control remoto de 
+            un televisor. 
+         <br><br>
+         &emsp;Si algún robot no detecta el mensaje rosa, es posible que esté demasiado lejos del robot líder.
+      </p>
+      <p class="texto">
+         •	En EdBlocks, la mensajería está restringida a los seis canales preestablecidos representados por los seis 
+            sobres de colores. 
+         <br><br>
+         &emsp;Los robots deben usar el mismo sobre de color para enviar y recibir. 
+         <br><br>
+         &emsp;Por ejemplo, si el robot A envía el mensaje azul pero el robot B tiene 'esperar hasta el mensaje verde' 
+            en su programa, el mensaje enviado por el robot A no activará al robot B para que continúe con su programa.
+      </p>
+      <p class="texto">
+         •	Explique a los alumnos qué está haciendo el bloque de mensajes. 
+         <br><br>
+         &emsp;En esta actividad, cuando el robot líder envía el mensaje rosa, es el equivalente a que ese robot diga 
+            "¡empieza!" a todos los demás robots. 
+         <br><br>
+         &emsp;Los otros robots saben que deben pasar al siguiente bloque de sus programas. 
+         <br><br>
+         &emsp;Explique que el robot líder no les está diciendo a los otros robots cómo bailar, solo que deben pasar de 
+            su bloque 'esperar hasta' a sus bloques de baile.
+      </p>
+      <p class="texto">
+         •	Recuerde a los estudiantes que debido a que Edison lee EdBlocks de izquierda a derecha, Edison esperará 
+            hasta que se reciba un bloque de mensajes antes de continuar con cualquier bloque ubicado a la derecha 
+            del bloque de mensajes "esperar hasta".
+      </p>
+      <h2>Extensiones de la Actividad</h2>
+      <p class="texto">
+         1.	Explore los otros bloques de inicio. Intente crear programas que utilicen los diferentes bloques de inicio.
+      </p>
+      <p class="texto">
+         2.	Intente crear un programa usando el bloque de inicio principal y un subprograma usando un bloque de inicio. 
+         <br><br>
+         &emsp;Experimente cómo Edison cambia del programa principal al subprograma cuando se activa la condición de 
+            inicio.
+      </p>
+      <h2>Guía de Respuestas</h2>
+      <p class="texto">
+         Tenga en cuenta: la respuesta 2 es un ejemplo de respuesta. Los resultados de los estudiantes dependerán de 
+         sus experiencias. Una nota sobre la pregunta 2: hacer que los estudiantes capturen sus programas con una 
+         herramienta de captura de pantalla es una buena oportunidad para practicar programas de computadora y 
+         dispositivos periféricos adicionales, incluida la impresora.
+      </p>
+      <p class="texto">
+         1.	
+      </p>
+      <p class="img_centrada"><img src="img/actividad23/23-3.png" width="60%" alt=""></p>
+      <p class="texto">
+         2.	
+      </p>
+      <p class="img_centrada"><img src="img/actividad23/23-4.png" width="80%" alt=""></p>
+      <br><br>
+      <a class="texto volver" href="index.html">Volver al índice</a>
+   </div>
+   <div id="pie">
+      <h1> Fun Tech Academy - Calle Alcobendas, 23 Leganés 28914 Madrid - www.funtech.academy </h1>
+	</div>
+</body>
+</html>
